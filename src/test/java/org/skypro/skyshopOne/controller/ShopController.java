@@ -30,7 +30,7 @@ public class ShopController {
         return storageService.getArticles();
     }
     @GetMapping("/search")
-    public Collection<SearchResult> Search(@RequestParam String pattern) {
+    public Collection<SearchResult> search(@RequestParam String pattern) {
         return searchService.search(pattern);
     }
 }

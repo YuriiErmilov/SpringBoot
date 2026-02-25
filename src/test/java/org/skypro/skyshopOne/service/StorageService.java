@@ -6,6 +6,7 @@ import org.skypro.skyshopOne.model.product.FixPriceProduct;
 import org.skypro.skyshopOne.model.product.Product;
 import org.skypro.skyshopOne.model.product.SimpleProduct;
 import org.skypro.skyshopOne.model.search.SearchResult;
+import org.skypro.skyshopOne.model.search.Searchable;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
@@ -44,11 +45,11 @@ public class StorageService {
     public Collection<Article> getArticles() {
         return articles.values();
     }
-    public Collection<SearchResult> getAllSearchables() {
+    public Collection<Searchable> getAllSearchables() {
         return Stream.concat(
                 products.values().stream(),
                 articles.values().stream()
-        ).map(SearchResult::fromSearchable).collect(Collectors.toList());
+        ).collect(Collectors.toList());
     }
 
 }

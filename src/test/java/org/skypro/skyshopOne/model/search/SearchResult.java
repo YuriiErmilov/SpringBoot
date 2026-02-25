@@ -4,12 +4,12 @@ package org.skypro.skyshopOne.model.search;
 public class SearchResult {
     private final String id;
     private final String name;
-    private final String getSearchableType;
+    private final String contentType;
 
-    public SearchResult(String  id, String name, String getSearchableType) {
+    public SearchResult(String  id, String name, String contentType) {
         this.id = id;
         this.name = name;
-        this.getSearchableType = getSearchableType;
+        this.contentType = contentType;
     }
 
     public String getId() {
@@ -19,10 +19,10 @@ public class SearchResult {
         return name;
     }
     public String getSearchableType() {
-        return getSearchableType;
+        return contentType;
     }
 
     public static SearchResult fromSearchable (Searchable searchable) {
-        return  new SearchResult(String.valueOf(searchable.getId()), searchable.getName(), searchable.getSearchableType());
+        return  new SearchResult(searchable.getId().toString(), searchable.getName(), searchable.getSearchableType());
     }
 }

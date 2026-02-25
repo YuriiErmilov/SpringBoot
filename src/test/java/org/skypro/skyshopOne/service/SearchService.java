@@ -16,9 +16,8 @@ public class SearchService  {
     }
 
     public Collection<SearchResult> search(String query) {
-        return Stream.concat(
-                storageService.getProducts().stream(),
-                storageService.getArticles().stream()
-        ).filter(item->item.getName().toLowerCase().contains(query.toLowerCase())).map(SearchResult::fromSearchable).collect(Collectors.toList());
+        return storageService.getAllSearchables().stream()
+                .filter(item->item.getName().toLowerCase()
+                        .contains(query.toLowerCase())).map(SearchResult::fromSearchable).collect(Collectors.toList());
     }
 }
