@@ -6,10 +6,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootApplication
-class SkyproApplicationTests {
+class SkyShopOneApplicationTests {
 
     public static void main(String[] args) {
-        SpringApplication.run(SkyproApplicationTests.class, args);
+        SpringApplication.run(SkyShopOneApplicationTests.class, args);
 
     }
 
