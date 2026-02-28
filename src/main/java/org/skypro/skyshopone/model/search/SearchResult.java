@@ -1,4 +1,4 @@
-package org.skypro.skyshopOne.model.search;
+package org.skypro.skyshopone.model.search;
 
 
 public class SearchResult {

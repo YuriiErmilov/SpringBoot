@@ -1,6 +1,4 @@
-package org.skypro.skyshopOne.model.search;
-
-import com.fasterxml.jackson.annotation.JsonIgnore;
+package org.skypro.skyshopone.model.search;
 
 import java.util.UUID;
 
