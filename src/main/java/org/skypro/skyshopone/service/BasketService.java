@@ -1,18 +1,17 @@
-package org.skypro.skyshopOne.service;
+package org.skypro.skyshopone.service;
 
 
-import org.skypro.skyshopOne.exception.NoSuchProductException;
-import org.skypro.skyshopOne.model.basket.BasketItem;
-import org.skypro.skyshopOne.model.basket.ProductBasket;
-import org.skypro.skyshopOne.model.basket.UserBasket;
-import org.skypro.skyshopOne.model.product.Product;
+import org.skypro.skyshopone.exception.NoSuchProductException;
+import org.skypro.skyshopone.model.basket.BasketItem;
+import org.skypro.skyshopone.model.basket.ProductBasket;
+import org.skypro.skyshopone.model.basket.UserBasket;
+import org.skypro.skyshopone.model.product.Product;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 import java.util.UUID;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 
