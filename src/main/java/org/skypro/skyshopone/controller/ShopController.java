@@ -1,12 +1,12 @@
-package org.skypro.skyshopOne.controller;
+package org.skypro.skyshopone.controller;
 
-import org.skypro.skyshopOne.model.article.Article;
-import org.skypro.skyshopOne.model.basket.UserBasket;
-import org.skypro.skyshopOne.model.product.Product;
-import org.skypro.skyshopOne.model.search.SearchResult;
-import org.skypro.skyshopOne.service.BasketService;
-import org.skypro.skyshopOne.service.SearchService;
-import org.skypro.skyshopOne.service.StorageService;
+import org.skypro.skyshopone.model.article.Article;
+import org.skypro.skyshopone.model.basket.UserBasket;
+import org.skypro.skyshopone.model.product.Product;
+import org.skypro.skyshopone.model.search.SearchResult;
+import org.skypro.skyshopone.service.BasketService;
+import org.skypro.skyshopone.service.SearchService;
+import org.skypro.skyshopone.service.StorageService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Collection;

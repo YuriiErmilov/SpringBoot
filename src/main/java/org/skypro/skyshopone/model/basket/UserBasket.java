@@ -1,6 +1,4 @@
-package org.skypro.skyshopOne.model.basket;
-
-import org.skypro.skyshopOne.model.product.Product;
+package org.skypro.skyshopone.model.basket;
 
 import java.util.List;
 

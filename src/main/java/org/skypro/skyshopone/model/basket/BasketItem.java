@@ -1,6 +1,6 @@
-package org.skypro.skyshopOne.model.basket;
+package org.skypro.skyshopone.model.basket;
 
-import org.skypro.skyshopOne.model.product.Product;
+import org.skypro.skyshopone.model.product.Product;
 
 public class BasketItem {
     private final Product product;
